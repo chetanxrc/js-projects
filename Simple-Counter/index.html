@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Simple Counter</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Decorative background, not part of content -->
+        <div class="bg-gradient" id="bgGradient" aria-hidden="true"></div>
+
+        <!-- Main content area -->
+        <main class="counter" role="region" aria-label="Counter">
+            <h1>Simple Counter</h1>
+
+            <!-- Accessible, non-editable counter display -->
+            <div id="resultDisplay" aria-live="polite" role="status">0</div>
+
+            <div class="count-buttons">
+                <button class="btn" id="increaseCount" aria-label="Increase count by one">Add +</button>
+                <button class="btn" id="resetCount" aria-label="Reset count to zero">Reset 0</button>
+                <button class="btn" id="decreaseCount" aria-label="Decrease count by one">Subtract -</button>
+            </div>
+
+            <!-- Keyboard shortcuts hint -->
+            <div class="shortcuts" aria-hidden="true">
+                <kbd>↑</kbd><span class="sep">–</span>Add
+                <span class="sep">|</span>
+                <kbd>0</kbd><span class="sep">–</span> Reset
+                <span class="sep">|</span>
+                <kbd>↓</kbd><span class="sep">–</span>Subtract
+            </div>
+        </main>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

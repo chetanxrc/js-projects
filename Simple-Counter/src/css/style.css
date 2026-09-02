@@ -1,0 +1,140 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap");
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Main layout container */
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Decorative gradient background bubble */
+.bg-gradient {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    filter: blur(25vw);
+    background-color: rgb(255, 206, 127);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Counter card */
+.counter {
+    max-width: 30rem;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.counter h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.75rem;
+}
+
+/* Counter value display (non-editable div) */
+#resultDisplay {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    border: 2px solid rgb(255, 206, 127);
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+/* Button group */
+.count-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Base button styles */
+.btn {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    padding: 1rem 0.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    filter: brightness(95%);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+/* Button color hints */
+#increaseCount {
+    background-color: rgb(255, 127, 127);
+}
+
+#resetCount {
+    background-color: rgb(255, 206, 127);
+}
+
+#decreaseCount {
+    background-color: rgb(127, 255, 157);
+}
+
+/* Keyboard shortcuts hint */
+.shortcuts {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    opacity: 0.6;
+}
+
+.shortcuts kbd {
+    display: inline-block;
+}
+
+.shortcuts span.sep {
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .counter h1 {
+        font-size: 2.25rem;
+    }
+
+    #resultDisplay {
+        font-size: 3.5rem;
+        padding: 1.5rem 0.75rem;
+    }
+
+    .shortcuts {
+        font-size: 0.75rem;
+    }
+}
