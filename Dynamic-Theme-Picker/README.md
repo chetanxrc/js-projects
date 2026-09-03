@@ -1,26 +1,23 @@
-# 🔢 Simple Counter
+# 🔧 Dynamic Theme Picker
 
 ## ✨ Project Overview
 
-The **Simple Counter** is a responsive web application that lets users increase, decrease, and reset a number in real time. Built with HTML, CSS, and JavaScript, it features keyboard shortcuts, accessible controls, and a modern design.
+A lightweight, client-side page to switch themes by clicking color buttons. Built with HTML, CSS, and JavaScript. Includes accessible controls and a responsive layout.
 
 ---
 
 ## 🖼️ Project Preview
 
-![Simple Counter Preview Screenshot](Preview.jpeg)
+![Dynamic Theme Picker Preview Screenshot](Preview.jpeg)
 
 ---
 
 ## 🚀 Features
 
-* **Increment Counter:** Increases the count by one when the **Add +** button is clicked or the `↑` key is pressed.
-* **Decrement Counter:** Decreases the count by one when the **Subtract -** button is clicked or the `↓` key is pressed.
-* **Minimum Value:** The counter cannot decrease below zero.
-* **Reset Counter:** Resets the count to zero using the **Reset 0** button or the `0` key.
-* **Keyboard Support:** Provides convenient keyboard shortcuts for all counter actions.
-* **Responsive Layout:** Optimized to look great and function seamlessly across desktop, tablet, and mobile screen sizes.
-* **Accessible Interface:** Uses descriptive labels, focus styles, and a live region to communicate counter updates.
+* Theme selection via a group of color buttons
+* Live theme updates: heading color and page accent backdrop change in real time
+* Accessible focus styles and ARIA labels for screen readers
+* Responsive typography and layout
 
 ---
 
@@ -40,16 +37,6 @@ This project was built using the core technologies of the web:
 
 ---
 
-## ⌨️ Keyboard Shortcuts
-
-| Key | Action |
-|---|---|
-| `↑` | Increase the count |
-| `0` | Reset the count to zero |
-| `↓` | Decrease the count |
-
----
-
 ## ⚙️ Installation and Usage
 
 To run this project locally, follow these simple steps:
@@ -57,13 +44,13 @@ To run this project locally, follow these simple steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/chetanxrc/js-projects/Simple-Counter]
+   git clone https://github.com/chetanxrc/js-projects
    ```
 
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd Simple-Counter
+   cd js-projects/Dynamic-Theme-Picker
    ```
 
 3. **Open the File:**
