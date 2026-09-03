@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Dynamic Theme Picker</title>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Decorative background - hidden from screen readers -->
+        <div class="bg-gradient" id="bgGradient" aria-hidden="true"></div>
+
+        <div class="theme-picker">
+            <h1 id="mainHeading">Customize your website with beautiful colors</h1>
+            <p>Select a color to customize the visual experience of this page.</p>
+
+            <!-- Group of theme buttons -->
+            <div class="theme-buttons" role="group" aria-label="Choose a color theme">
+                <button class="btn" id="btn-1" aria-label="Green Theme" type="button" title="Green Theme"></button>
+                <button class="btn" id="btn-2" aria-label="Red Theme" type="button" title="Red Theme"></button>
+                <button class="btn" id="btn-3" aria-label="Blue Theme" type="button" title="Blue Theme"></button>
+                <button class="btn" id="btn-4" aria-label="Orange Theme" type="button" title="Orange Theme"></button>
+                <button class="btn" id="btn-5" aria-label="Pink Theme" type="button" title="Pink Theme"></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

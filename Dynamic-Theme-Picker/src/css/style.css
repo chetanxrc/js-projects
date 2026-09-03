@@ -1,0 +1,78 @@
+/* Import a modern, variable-weight font for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Centered the content under container using flexbox */
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Decorative blurred gradient background */
+#bgGradient {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 136, 70);
+    filter: blur(10vw);
+    opacity: 0.25;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.theme-picker {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive heading using clamp() for fluid typography */
+.theme-picker h1 {
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    max-width: 40rem;
+    margin-inline: auto;
+    color: rgb(0, 136, 70);
+    transition: 0.3s ease-in;
+}
+
+.theme-picker p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    max-width: 40rem;
+    margin: 1.25rem auto 2rem auto;
+}
+
+/* Color theme buttons */
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform: translateY(-0.25rem),
+    scale(0.95);
+}
+
+/* Focus styles for keyboard accessibility */
+.btn:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
